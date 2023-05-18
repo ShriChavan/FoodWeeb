@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Online Food ordering system</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <script type="text/javascript">
+        const cursor = document.querySelector(".cursor");
+        var timeout;
+        document.addEventListener("mousemove", (e) => {
+            let x = e.pageX;
+            let y = e.pageY;
+            cursor.style.top = y+"px";
+            cursor.style.left = x+"px";
+            cursor.style.display = "block";
+        });
+        document.addEventListener("mouseout", () => {
+            cursor.style.display = "none";
+        });
+    </script>
+    <div class="logo">
+        <img src="logo2.png">
+    </div>
+    <div class="main">
+        <header><ul>
+            <li class="active"><a href="signin.html">Home</a></li>
+            <li><a href="signin.html">Order Now</a></li>
+            <li><a href="contactpage.html">Contact us</a></li>
+            <li><a href="adminlogin.html">Admin Login</a></li>
+            <li><a href="aboutpage.html">About</a></li>
+        </ul></header>
+    </div>
+    <div class="title">
+        <h1>FoodWeeb</h1>
+    </div>
+    <div class="button">
+        <a href="registration.html" class="btn">Register</a>
+        <a href="signin.html" class="btn">Sign In</a>
+    </div>
+
+    <div class="row">
+        <div class="card1">
+            <h3>Pizza</h3>
+            <p>Varieties of pizza</p>
+        </div>
+        <div class="card2">
+            <h3>Biryani</h3>
+            <p>Varieties of Biryani</p>
+        </div>
+        <div class="card3">
+            <h3>Burger</h3>
+            <p>Varieties of Burgers</p>
+        </div>
+        <div class="card4">
+            <h3>South Indian</h3>
+            <p>Varieties of South Indian cuisine</p>
+        </div>
+    </div>
+</body>
+</html>

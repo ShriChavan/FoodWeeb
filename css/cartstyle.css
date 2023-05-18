@@ -1,0 +1,168 @@
+* {
+    font-family: Century Gothic;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    background: black;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 40px;
+    font-size: large;
+    margin-right: 30px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid white transparent;
+    transition: 0.5s ease;
+}
+ul li a:hover{
+    background-color: white;
+    color: black;
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 2rem;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 140px;
+    margin-bottom: 25px;
+}
+
+.btn,
+.option-btn,
+.delete-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    font-size: 1.7rem;
+    padding: 1.2rem 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.btn:hover,
+.option-btn:hover,
+.delete-btn:hover {
+    background-color: black;
+}
+
+.option-btn i,
+.delete-btn i {
+    padding-right: .5rem;
+    background: transparent;
+}
+
+.option-btn {
+    background-color: orange;
+}
+
+.delete-btn {
+    margin-top: 0;
+    background-color: red;
+}
+
+.shopping-cart table {
+    text-align: center;
+    width: 100%;
+    border: 1px solid white;
+}
+
+.shopping-cart table thead th {
+    padding: 1.5rem;
+    font-size: 2rem;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.shopping-cart table tr td {
+    border-bottom: #999;
+    padding: 1.5rem;
+    font-size: 2rem;
+    color: white;
+    border: 1px solid white;
+}
+.shopping-cart table tr td img{
+    border: 1px solid white;
+    margin-top: -10px;
+    margin-bottom: -15px;
+    border-radius: 10px;
+}
+
+.shopping-cart table input[type="number"] {
+    border: 1px solid white;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: white;
+    width: 10rem;
+    border-radius: 5px;
+}
+
+.shopping-cart table input[type="submit"] {
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+}
+
+.shopping-cart table input[type="submit"]:hover {
+    background-color: black;
+}
+
+.shopping-cart table .table-bottom {
+    background-color: white;
+}
+
+.shopping-cart .checkout-btn {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.shopping-cart .checkout-btn a {
+    display: inline-block;
+    width: auto;
+}
+
+.shopping-cart .checkout-btn a.disabled {
+    pointer-events: none;
+    opacity: .5;
+    user-select: none;
+    background-color: red;
+}

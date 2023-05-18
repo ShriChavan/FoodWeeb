@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>About us</title>
+    <link rel="stylesheet" href="css/aboutstyle.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <script type="text/javascript">
+        const cursor = document.querySelector(".cursor");
+        var timeout;
+        document.addEventListener("mousemove", (e) => {
+            let x = e.pageX;
+            let y = e.pageY;
+            cursor.style.top = y+"px";
+            cursor.style.left = x+"px";
+            cursor.style.display = "block";
+        });
+        document.addEventListener("mouseout", () => {
+            cursor.style.display = "none";
+        });
+    </script>
+    <div class="logo">
+        <img src="logo2.png">
+    </div>
+    <div class="buttonlist">
+        <header><ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Order Now</a></li>
+            <li><a href="contactpage.html">Contact us</a></li>
+        </ul></header>
+    </div>
+    <div class="main2">
+        <div class="main">
+            <h1>About us</h1>
+            <div class="content">
+                <h2>Creators</h2>
+                <p>Shrimant Chavan, Pruthviraj More, Tejas Bhosale, Arun Desai, Gaurav Mane</p>
+                <h2>Address</h2>
+                <p>DY Patil College of Engineering and Tech. <br>Kasba Bavda, Kolhapur <br>Maharashtra, India</p>
+                <h2>Contact</h2>
+                <p>+91 9823349336, +91 8421929509 <br>chavanshri2854@gmail.com, pruthvirajmore2020@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

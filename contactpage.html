@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="css/contactstyle.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <script type="text/javascript">
+        const cursor = document.querySelector(".cursor");
+        var timeout;
+        document.addEventListener("mousemove", (e) => {
+            let x = e.pageX;
+            let y = e.pageY;
+            cursor.style.top = y+"px";
+            cursor.style.left = x+"px";
+            cursor.style.display = "block";
+        });
+        document.addEventListener("mouseout", () => {
+            cursor.style.display = "none";
+        });
+    </script>
+    <div class="main">
+        <form action="contactreq.php" method="post">
+            <h1>Contact us</h1>
+            <div class="content">
+                <div class="input-box">
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Enter name" name="name" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter Email address" name="email" required>
+                </div>
+                <div class="input-box">
+                    <label for="message">Feedback</label>
+                    <textarea name="Message" id="feedback" placeholder="Enter your message" cols="" rows="5"></textarea>
+                </div>
+                <div class="button1">
+                    <button type="submit" name="submit">Submit</button>
+            </div>
+            </div>
+        </form>        
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Register to FoodWeeb</title>
+    <link rel="stylesheet" href="css/regstyle.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <script type="text/javascript">
+        const cursor = document.querySelector(".cursor");
+        var timeout;
+        document.addEventListener("mousemove", (e) => {
+            let x = e.pageX;
+            let y = e.pageY;
+            cursor.style.top = y+"px";
+            cursor.style.left = x+"px";
+            cursor.style.display = "block";
+        });
+        document.addEventListener("mouseout", () => {
+            cursor.style.display = "none";
+        });
+    </script>
+    <div class="container">
+        <form action="regdatas.php" method="post">
+            <h2>Register to FoodWeeb</h2>
+            <div class="content">
+                <div class="input-box">
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Enter name" name="name" required>
+                </div>
+                <div class="input-box">
+                    <label for="age">Age</label>
+                    <input type="number" placeholder="Enter age" name="age" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter Email address" name="email" required>
+                </div>
+                <div class="input-box">
+                    <label for="phone">Phone number</label>
+                    <input type="tel" placeholder="Enter phone number" name="phone" required>
+                </div>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter new password" name="password" required>
+                </div>
+                <div class="input-box">
+                    <label for="conpass">Confirm Password</label>
+                    <input type="password" placeholder="Confirm password" name="conpass" required>
+                </div>
+                <span class="gender">Gender</span>
+                <div class="gendercat">
+                    <input type="radio" name="gender" value="m">
+                    <label for="gender">Male</label>
+                    <input type="radio" name="gender" value="f">
+                    <label for="gender">Female</label>
+                    <input type="radio" name="gender" value="o">
+                    <label for="gender">Other</label>
+                </div>
+                <div class="warning">
+                    <a href="signin.html">Click here to sign-in if already registered</a>
+                </div>
+            </div>
+            <div class="button-container">
+                <input type="submit" value="submit" name="submit"></input>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

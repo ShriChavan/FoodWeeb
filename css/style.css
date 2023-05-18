@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+    cursor: none;
+}
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../bugerwall.jpg);
+    height: 100vh;
+    background-size:cover;
+    background-position:center;
+    cursor: none;
+}
+.cursor{
+    z-index: 999;
+    position: fixed;
+    background: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px white, 0 0 60px white, 0 0 100px white;
+    display: none;
+}
+@keyframes colors{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.cursor:before{
+    content: '';
+    position: absolute;
+    background: white;
+    width: 37.5px;
+    height: 37.5px;
+    opacity: 0.2;
+    transform: translate(-30%,-30%);
+    border-radius: 50%;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid white transparent;
+    transition: 0.5s ease;
+}
+ul li a:hover{
+    background-color: white;
+    color: black;
+}
+ul li.active a{
+    background-color: white;
+    color: black;
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+.main{
+    max-width: 1450px;
+    margin: auto;
+}
+.title{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color: white;
+    font-size: 90px;
+}
+.button{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.card1{
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    color: white;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: none;
+    margin: 10px 15px;
+    background-image: url(../pizza.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card2{
+    position: absolute;
+    top: 65%;
+    left: 32%;
+    color: white;
+    text-shadow: 0 0 5px rgb(97, 97, 97);
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: none;
+    margin: 10px 15px;
+    background-image: url(../biryani.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card3{
+    position: absolute;
+    top: 65%;
+    left: 54%;
+    color: white;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: none;
+    margin: 10px 15px;
+    background-image: url(../burger.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card4{
+    position: absolute;
+    top: 65%;
+    left: 76%;
+    color: white;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: none;
+    margin: 10px 15px;
+    background-image: url(../idli.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1:hover{
+    transform: translateY(-10px);
+}
+.card2:hover{
+    transform: translateY(-10px);
+}
+.card3:hover{
+    transform: translateY(-10px);
+}
+.card4:hover{
+    transform: translateY(-10px);
+}
